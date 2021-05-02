@@ -2,7 +2,7 @@
 FROM ubuntu:18.04
 
 RUN echo ========== Install dependencies ========== \
-  && apt-get update && apt-get install -y \
+  && chmod 1777 /tmp && apt-get update && apt-get install -y \
     clang \
     gdb \
     git \
